@@ -253,7 +253,8 @@ const ContactSection = () => {
             <li>
               <strong>📞 Call Us</strong>
               <br />
-              +91 99431 30020
+              +91 99431 30020<br/>
+              +91 93635 40020
             </li>
           </ul>
           <div className="social-icons">
