@@ -589,3 +589,125 @@ footer {
   transform: translateY(-10px);
   transition: all 0.7s ease-in-out;
 }
+/* ========== Media Queries ========== */
+
+/* For small devices (phones, up to 600px) */
+@media (max-width: 600px) {
+  .hero-section,
+  .about-info,
+  .about-features,
+  .contact-details,
+  .footer-container,
+  .work-name,
+  .contact-container {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-img img,
+  .abt-img img,
+  .work-item img,
+  .contact-form-card input {
+    width: 90vw !important;
+    height: auto;
+  }
+
+  .about-desc,
+  .about-img,
+  .inner-contact-details,
+  .feature-grid {
+    width: 90vw !important;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto;
+  }
+
+  .contact-details {
+    width: 100% !important;
+    height: auto;
+    padding: 10px;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .work-name {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto;
+  }
+}
+
+/* For medium devices (tablets, 601px to 992px) */
+@media (min-width: 601px) and (max-width: 992px) {
+  .about-info,
+  .contact-details,
+  .work-name {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-img img,
+  .abt-img img,
+  .contact-form-card input {
+    width: 70vw;
+    height: auto;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .work-name {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* For large devices (desktops/laptops, 993px and above) */
+@media (min-width: 993px) {
+  .about-info {
+    flex-direction: row;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .work-name {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-right {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
