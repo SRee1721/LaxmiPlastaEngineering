@@ -1,0 +1,7 @@
+#header-list {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
